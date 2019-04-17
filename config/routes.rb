@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'challenge#home'
+  post '/', to: 'challenge#set_name'
+  get '/shuffle', to: 'challenge#shuffle_card'
 end

@@ -1,0 +1,7 @@
+$('.name_zone_1').html("<%= j(render partial: 'name_zone', locals: { name: @name_1 }) %>")
+$('.name_zone_2').html("<%= j(render partial: 'name_zone', locals: { name: @name_2 }) %>")
+$('.name_box').css('display', 'grid')
+$('.card_box').css('display', 'grid')
+$('.retry_area').show();
+$('.name_form').hide('slow');
+$('.description_box').hide('slow');

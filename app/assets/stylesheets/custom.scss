@@ -1,0 +1,240 @@
+#heading02{
+	position:relative;
+	margin:0 -1px;
+	font:bold 30px/1.6 Arial, Helvetica, sans-serif;
+	text-align:center;
+	color:#333;
+	background:#f0e800;
+	-webkit-transform: rotate(-3deg) skew(-3deg);
+	-moz-transform: rotate(-3deg) skew(-3deg);
+	-o-transform: rotate(-3deg) skew(-3deg);
+	-ms-transform: rotate(-3deg) skew(-3deg);
+	transform: rotate(-3deg) skew(-3deg);
+	text-shadow:1px 1px 0 rgba(255,255,255,1);
+	box-shadow:	0 1px 2px 0 rgba(0,0,0,0.2),
+				30px 0 0 0 #f0e800,
+				-30px 0 0 0 #f0e800;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.card_box {
+  display: none;
+  grid-template-rows: 550px;
+  grid-template-columns: 50% 50%;
+  margin: 10px;
+}
+
+.inner_card_box_1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  height: 500px;
+}
+
+.inner_card_box_2 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  height: 500px;
+}
+
+.card_image_1 {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.card_image_2 {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.card_image_box_1 {
+  height: 100%;
+  text-align: right;
+}
+
+.card_image_box_2 {
+  height: 100%;
+  text-align: left;
+}
+
+.name_box {
+  display: none;
+  grid-template-rows: 40px;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 40px;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 15px;
+}
+
+.name_zone_1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  height: 100%;
+  width: 340px;
+  margin-left: auto;
+}
+
+.name_zone_2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  height: 100%;
+  width: 340px;
+  margin-right: auto;
+}
+
+.retry_area {
+  display: none;
+  text-align: center;
+}
+
+.name_form {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#name_1 {
+  width: 20%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#name_2 {
+  width: 20%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 0;
+}
+
+.name_submit {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 10em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+  border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+}
+
+.name_submit:before {  
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+}
+
+.name_submit:after {  
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 6px 6px 0px;
+  border-style: solid;
+  border-color: #FFF;
+  border-bottom-color: transparent;
+}
+
+.name_submit:active {
+  /*ボタンを押したとき*/
+  border:none;
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);
+}
+
+.name_submit:active:after, .btn-square-slant:active:before {
+  content: none;/*ボタンを押すと線が消える*/
+}
+
+.btn-square-slant {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 10em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+  border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+}
+
+.btn-square-slant:before {  
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+}
+
+.btn-square-slant:after {  
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 6px 6px 0px;
+  border-style: solid;
+  border-color: #FFF;
+  border-bottom-color: transparent;
+}
+
+.btn-square-slant:active {
+  /*ボタンを押したとき*/
+  border:none;
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);
+}
+
+.btn-square-slant:active:after, .btn-square-slant:active:before {
+  content: none;/*ボタンを押すと線が消える*/
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideInBottom {
+  animation-name: slideInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}

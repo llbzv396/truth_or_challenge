@@ -1,0 +1,23 @@
+<div class="title">
+  <h1 id="heading02">真実か挑戦か</h1>
+</div>
+<div class="description_box">
+  <p class="description">名前を入力するだけで、すぐにゲームが楽しめます！</p>
+</div>
+<div class="name_form">
+  <%= form_with url: root_path do |form| %>
+    <%= form.text_field :name_1, placeholder: "名前を入力", required: true %>
+    <%= form.text_field :name_2, placeholder: "名前を入力", required: true %>
+    <p><%= form.submit :名前を設定, class: 'name_submit' %></p>
+  <% end %>
+</div>
+<div class="name_box">
+  <p class="name_zone_1 slideInBottom"></p>
+  <p class="name_zone_2 slideInBottom"></p>
+</div>
+<div class="card_box">
+  <%= render partial: 'card_box', locals: { classification_1: @classification_1, classification_2: @classification_2 } %>
+</div>
+<div class="retry_area slideInBottom">
+  <%= link_to '実行', shuffle_path, remote: true, class: 'btn-square-slant' %>
+</div>
