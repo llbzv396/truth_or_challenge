@@ -1,0 +1,15 @@
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.3/ext/bootsnap
+/Users/kyosuke/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20190417-35203-1ncogu8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.3/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.3/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.4.3/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190417-35203-1c9pip3/bootsnap

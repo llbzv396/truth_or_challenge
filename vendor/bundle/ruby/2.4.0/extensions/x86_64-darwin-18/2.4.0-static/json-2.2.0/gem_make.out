@@ -1,0 +1,13 @@
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/json-2.2.0/ext/json
+/Users/kyosuke/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20190417-35203-10c8zay.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/kyosuke/Desktop/works/truth_or_challenge/vendor/bundle/ruby/2.4.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" install
