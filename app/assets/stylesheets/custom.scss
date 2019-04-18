@@ -224,17 +224,41 @@
 @keyframes slideInBottom {
   from {
     opacity: 0;
-    transform: translateY(150px);
   }
   
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
 .slideInBottom {
   animation-name: slideInBottom;
-  animation-duration: 1s;
+  animation-duration: 3.5s;
   animation-timing-function: ease-out;
+}
+
+.result_box {
+  position: relative;
+  margin: 0;
+  height: 50px;
+}
+
+.result_message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  font-size: 50px;
+}
+
+#hidden_name_1 {
+  display: none;
+}
+
+#hidden_name_2 {
+  display: none;
 }

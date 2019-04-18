@@ -11,6 +11,7 @@
     <p><%= form.submit :名前を設定, class: 'name_submit' %></p>
   <% end %>
 </div>
+<div class="result_box"><p class="result_message"></p></div>
 <div class="name_box">
   <p class="name_zone_1 slideInBottom"></p>
   <p class="name_zone_2 slideInBottom"></p>
@@ -21,3 +22,5 @@
 <div class="retry_area slideInBottom">
   <%= link_to '実行', shuffle_path, remote: true, class: 'btn-square-slant' %>
 </div>
+<p id="hidden_name_1"></p>
+<p id="hidden_name_2"></p>
