@@ -1,20 +1,19 @@
-$('.result_message').toggle();
-<% if @winner == 1 %>
-var winner_name = $('#hidden_name_1').html();
-$('.result_message').html(`${winner_name} の勝ち`);
-<% end %>
-<% if @winner == 2 %>
-var winner_name = $('#hidden_name_2').html();
-$('.result_message').html(`${winner_name} の勝ち`);
-<% end %>
-<% if @winner == 3 %>
-$('.result_message').html("引き分け");
-<% end %>
-$('.card_box').html("<%= j(render partial: 'card_box', locals: { classification_1: '55', classification_2: '55' }) %>")
-$('.card_image_1').delay(2500).queue(function(){
-  $(this).attr("src","/cards/<%= @classification_1 %>.png");
-});
-$('.card_image_2').delay(2500).queue(function(){
-  $(this).attr("src","/cards/<%= @classification_2 %>.png");
-});
-$('.result_message').delay(2500).fadeIn(500);
+var first_action = function(){
+  $('.card_box').html("<%= j(render partial: 'card_box', locals: { classification_1: '55', classification_2: '55' }) %>")
+}
+
+var second_action = function(){
+  $('.card_image_1').delay(0).queue(function(){
+    $(this).attr("src","/cards/<%= @classification_1 %>.png");
+  });
+  $('.card_image_2').delay(0).queue(function(){
+    $(this).attr("src","/cards/<%= @classification_2 %>.png");
+  });
+  $('.result_message').delay(0).fadeIn(500);
+}
+
+var result = new Promise(function() {
+  setTimeout(first_action(), 3000)
+})
+
+result.then(second_action())
